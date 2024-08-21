@@ -3,6 +3,10 @@ body {
   color: yellow;
 }
 
+#ForYouSixer {
+  display: none;
+}
+
 #Tri {
   text-align: center;
   font-size: 10vmin;
