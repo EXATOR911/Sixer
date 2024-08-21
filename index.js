@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var SixersSong = document.getElementById("ForYouSixer");
-  if (SixersSong) {
-    SixersSong.play();
-  }
+  SixersSong.play();
 });
 
 document.getElementById("Tri").addEventListener("click", function () {
