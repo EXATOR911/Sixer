@@ -1,6 +1,54 @@
 body {
   background-color: black;
   color: yellow;
+  font-family: Arial, sans-serif;
+}
+
+.slider-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.slider-checkbox {
+  display: none;
+}
+
+.slider-label {
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-label .slider {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent white; /* Triangle pointing right */
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s;
+}
+
+.slider-checkbox:checked + .slider-label {
+  background-color: #66bb6a;
+}
+
+.slider-checkbox:checked + .slider-label .slider {
+  left: 22px; /* Move the slider to the right when checked */
+}
+
+#Music {
+  text-decoration: underline;
+  font-weight: 700;
+  color: grey;
 }
 
 #ForYouSixer {
@@ -12,6 +60,4 @@ body {
   font-size: 10vmin;
   line-height: 1;
   display: block;
-  margin: 20px auto 20px auto;
-  border-radius: 20px;
 }

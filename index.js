@@ -1,6 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
+// script.js
+document.getElementById("audioToggle").addEventListener("change", function () {
   var SixersSong = document.getElementById("ForYouSixer");
-  SixersSong.play();
+
+  if (this.checked) {
+    SixersSong.play();
+  } else {
+    SixersSong.pause();
+  }
 });
 
 document.getElementById("Tri").addEventListener("click", function () {
