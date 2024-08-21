@@ -1,7 +1,9 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   var SixersSong = document.getElementById("ForYouSixer");
-  SixersSong.play();
-};
+  if (SixersSong) {
+    SixersSong.play();
+  }
+});
 
 document.getElementById("Tri").addEventListener("click", function () {
   {
