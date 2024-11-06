@@ -1,4 +1,4 @@
-// script.js
+//Music
 document.getElementById("audioToggle").addEventListener("change", function () {
   var SixersSong = document.getElementById("ForYouSixer");
 
@@ -9,12 +9,14 @@ document.getElementById("audioToggle").addEventListener("change", function () {
   }
 });
 
+//Interaction effect
 document.getElementById("Tri").addEventListener("click", function () {
   {
     alert("I'll be seeing you Pines family! You can't kill an idea!!");
   }
 });
 
+//Blinking effect
 var blink_speed = 1000;
 var t = setInterval(function () {
   var ele = document.getElementById("Tri");
